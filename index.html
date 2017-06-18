@@ -1,0 +1,31 @@
+<html>
+<head>
+ <title> Start page </title>
+ </head>
+
+<body>
+ <marquee direction="right">***WELCOME***</marquee>
+<br/>
+ <form name="form1" action="/cgi-bin/verify.py" method="POST" target="_blank">
+ <fieldset>
+ <h3>Already a user? Login!</h3>
+ <legend>Login</legend>
+ Username: <input name="x" value="Type username">
+ Password: <input name="y" type="password">
+ <input type="submit" value="LOGIN" >
+ </fieldset>
+ </form>
+<br/>
+<br/>
+ <form name="form2" method="POST" action="/cgi-bin/register.py" target="_blank">
+ <fieldset>
+ <h3>New user? Register!</h3>
+ <legend>Register</legend>
+ Username: <input name="u" value="Enter a username">
+ E-mail ID: <input name="eid" type="email">
+ Password: <input name="p" type="password">
+ <input type="submit" value="REGISTER">
+ </fieldset>
+ </form>
+</body>
+</html>

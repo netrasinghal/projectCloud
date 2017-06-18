@@ -1,0 +1,18 @@
+<html>
+<head>
+ <title> Execution page </title>
+ <script type="text/javascript" >
+	function showValue(){
+		var x=document.forms.form2.cmd.value;
+		document.getElementById('display').innerHTML=display;
+ </script>
+ </head>
+
+<body>
+ <form name="form2" action="/cgi-bin/form.py" method="POST">
+ Command: <input type="text" name="cmd"> 
+ <input type="submit" value="EXECUTE" onclick="showValue();">
+ </form>
+ <div id="display"></div>
+</body>
+</html>
